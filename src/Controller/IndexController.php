@@ -16,4 +16,12 @@ class IndexController extends AbstractController
     {
         return $this->render('dash/index.html.twig');
     }
+
+    /**
+     * @Route("/", name="dash_index")
+     */
+    public function home(): Response
+    {
+        return $this->render('dash/home.html.twig');
+    }
 }

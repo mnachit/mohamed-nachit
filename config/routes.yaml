@@ -1,6 +1,6 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+dash_home:
+    path: /
+    controller: App\Controller\IndexController::home
 
 dash_index:
     path: /dash
