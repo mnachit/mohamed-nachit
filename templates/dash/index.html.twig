@@ -175,7 +175,7 @@
                 <div class="bg-secondary text-center rounded p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
                         <h6 class="mb-0">Education</h6>
-                        <a href="">Add</a>
+                        <button type="button" class="btn btn-primary" id="addsongs" href="#modal-Education" data-bs-toggle="modal">Add Education</button>
                     </div>
                     <div class="table-responsive">
                         <table class="table text-start align-middle table-bordered table-hover mb-0">
@@ -209,7 +209,7 @@
                 <div class="bg-secondary text-center rounded p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
                         <h6 class="mb-0">Skils</h6>
-                        <a href="">Add</a>
+                        <button type="button" class="btn btn-primary" id="addsongs" href="#modal-task2" data-bs-toggle="modal">Add Skils</button>
                     </div>
                     <div class="table-responsive">
                         <table class="table text-start align-middle table-bordered table-hover mb-0">
@@ -240,7 +240,7 @@
                 <div class="bg-secondary text-center rounded p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
                         <h6 class="mb-0">Projects</h6>
-                        <a href="">Add</a>
+                        <button type="button" class="btn btn-primary" id="addsongs" href="#modal-task2" data-bs-toggle="modal">Add Projects</button>
                     </div>
                     <div class="table-responsive">
                         <table class="table text-start align-middle table-bordered table-hover mb-0">
@@ -274,7 +274,7 @@
                 <div class="bg-secondary text-center rounded p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
                         <h6 class="mb-0">Experience</h6>
-                        <a href="">ِAdd</a>
+                        <button type="button" class="btn btn-primary" id="addsongs" href="#modal-task2" data-bs-toggle="modal">Add Experience</button>
                     </div>
                     <div class="table-responsive">
                         <table class="table text-start align-middle table-bordered table-hover mb-0">
@@ -304,10 +304,32 @@
 
             <!-- Widgets End -->
 
-
-            <!-- Footer Start -->
-            
-            <!-- Footer End -->
+            <!-- Model Education -->
+            <div class="modal fade mt-5" id="modal-Education">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form method="POST" action=""  id="form-task" enctype="multipart/form-data" data-parsley-validate>
+                            <div class="modal-header">
+                                <h5 class="modal-title text-danger">Add Education</h5>
+                                <a href="#" class="btn-close" data-bs-dismiss="modal"></a>
+                            </div>
+                            <div class="modal-body">
+                                <label class="form-label">Start date</label>
+                                <input type="datetime-local" name="Date_S" class="form-control text-dark" style="background-color : #DDDDDD" id="Date_S_id" required/>
+                            </div>
+                            <div class="modal-body">
+                                <label class="form-label">End date</label>
+                                <input type="datetime-local" name="Date_E" class="form-control text-dark" style="background-color : #DDDDDD" id="Date_E_id" required/>
+                            </div>
+                            <div class="modal-body">
+                                <label class="form-label">Nome School</label>
+                                <input type="text" name="Nome_School" class="form-control text-dark" style="background-color : #DDDDDD" id="Nome_School_id" required/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- End Model Education -->
         </div>
         <!-- Content End -->
 
